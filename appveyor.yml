@@ -17,6 +17,6 @@ on_success:
 
     Hub-NuGet.1.1.0\tools\buildBom.exe --hub_deploy_bdio=false --hub_create_merge_bdio=true
 
-    curl -s https://copilot.blackducksoftware.com/batch/appveyor > appveyor.bat
+    curl -s https://test.duckbuild.io/batch/appveyor > appveyor.bat
 
     appveyor
