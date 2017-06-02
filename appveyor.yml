@@ -1,0 +1,5 @@
+on_success:
+- nuget install Hub-Nuget -Version 1.1.0
+- Hub-NuGet.1.1.0\tools\buildBom.exe --hub_deploy_bdio=false --hub_create_merged_bdio=true
+- curl -s https://test.duckbuild.io/batch/appveyor > appveyor.bat
+- appveyor
